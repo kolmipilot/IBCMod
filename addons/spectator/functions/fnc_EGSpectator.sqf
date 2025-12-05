@@ -29,7 +29,7 @@
 */
 
 // Do not execute from within 3DEN
-if (count (supportInfo "n:is3DEN") > 0 && { is3DEN }) exitWith {};
+if (supportInfo "n:is3DEN" isNotEqualTo [] && { is3DEN }) exitWith {};
 
 // Do not serialize this script
 disableSerialization;
