@@ -5,8 +5,6 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#include "initSettings.inc.sqf"
-
 if (hasInterface) then {
     // Save current time delay in case it changes (to adjust remaining respawn time)
     GVAR(oldTime) = GVAR(time);

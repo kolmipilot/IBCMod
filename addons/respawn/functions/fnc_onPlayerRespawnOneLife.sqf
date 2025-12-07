@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [bob, ted] call afm_respawn_fnc_onPlayerRespawn
+ * [bob, ted] call ibc_respawn_fnc_onPlayerRespawn
  *
  * Public: No
  */
@@ -20,8 +20,5 @@ params ["_newUnit", "_oldUnit"];
 
 // Restore starting loadout
 [{_this setUnitLoadout GVAR(savedEquipment)}, _newUnit] call CBA_fnc_execNextFrame;
-
-// Reset time elapsed counter
-GVAR(timeElapsed) = 0;
 
 nil

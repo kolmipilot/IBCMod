@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [30] call afm_respawn_fnc_adjustTime
+ * [30] call ibc_respawn_fnc_adjustTime
  *
  * Public: No
  */

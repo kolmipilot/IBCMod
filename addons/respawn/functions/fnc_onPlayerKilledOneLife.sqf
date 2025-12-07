@@ -11,16 +11,13 @@
  * None
  *
  * Example:
- * [bob, ted] call afm_respawn_fnc_onPlayerKilled
+ * [bob, ted] call ibc_respawn_fnc_onPlayerKilledOneLife
  *
  * Public: No
  */
 
 params ["_oldUnit", "_killer"];
 
-// Respawn is disabled
-if (!GVAR(enabled)) exitWith {setPlayerRespawnTime TIME_DISABLED};
-
-setPlayerRespawnTime GVAR(time);
+setPlayerRespawnTime TIME_DISABLED;
 
 nil

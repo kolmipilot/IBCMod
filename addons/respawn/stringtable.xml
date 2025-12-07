@@ -5,21 +5,9 @@
             <English>IBC - Respawn</English>
             <Polish>IBC - Odrodzenie</Polish>
         </Key>
-        <Key ID="STR_IBC_Respawn_Enabled">
-            <English>Enable respawn</English>
-            <Polish>Włącz odrodzenie</Polish>
-        </Key>
-        <Key ID="STR_IBC_Respawn_Enabled_Description">
-            <English>Enables respawn with given delay.</English>
-            <Polish>Włącza odrodzenie z określonym opóźnieniem.</Polish>
-        </Key>
-        <Key ID="STR_IBC_Respawn_Time">
-            <English>Respawn delay</English>
-            <Polish>Opóźnienie odrodzenia</Polish>
-        </Key>
-        <Key ID="STR_IBC_Respawn_Time_Description">
-            <English>How much time must pass before player will respawn (if respawn is enabled).</English>
-            <Polish>Jak dużo czasu musi upłynąć by gracz mógł się odrodzić (jeśli odrodzenie jest włączone).</Polish>
+        <Key ID="STR_IBC_Respawn_DisplayName_OneLife">
+            <English>IBC - One life</English>
+            <Polish>IBC - Jedno życie</Polish>
         </Key>
         <Container name="Modules">
             <Key ID="STR_IBC_Respawn_ModuleRespawn_Attribute_ApplyTo_DisplayName">
