@@ -1,13 +1,18 @@
 class CfgWeapons{
-    class Default {};
-    class ItemCore: Default {};
+
+    #include "Helmets.hpp"
+    #include "Vests.hpp"
+
+
+    
     class CBA_MiscItem: ItemCore {};
     class USP_ItemCore: CBA_MiscItem {};
     class USP_BAT_PVS31: USP_ItemCore {
         scope = 0;
     };
-    class USP_BOLTCUTTER: USP_ItemCore {
-        scope = 0;
+    class USP_BOLTCUTTER: USP_ItemCore { 
+        ACE_isTool = 1;
+        ACE_isWirecutter = 1;
     };
     class USP_CARABINER: USP_ItemCore {
         scope = 0;
@@ -207,6 +212,7 @@ class CfgWeapons{
     class USP_ZIPTIE: USP_ItemCore {
         scope = 0;
     };
+
 
 };
 
