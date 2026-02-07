@@ -1,0 +1,12 @@
+class Stage0
+{
+ texture = "z\ibc\addons\bangalore\data\WorldGridMaterial_albedo.paa";
+};
+class Stage1
+{
+ texture = "z\ibc\addons\bangalore\data\WorldGridMaterial_normal.paa";
+};
+class Stage2
+{
+ texture = "z\ibc\addons\bangalore\data\WorldGridMaterial_metallic.paa";
+};
