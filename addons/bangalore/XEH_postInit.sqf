@@ -17,7 +17,7 @@ if (!hasInterface) exitWith {};
 
 [{ 
     params ["_unit", "_range", "_bomb", "_fuzeTime", "_triggerItem"];
-    private _array = nearestObjects [_bomb, [], 5];
+    private _array = nearestObjects [_bomb, [], 10];
     {   
         systemChat format["handling z post init z event ahdnelrem %1, %2",  _x, _bomb];
         if (_x isKindOf "Wall_F") then {
@@ -25,6 +25,12 @@ if (!hasInterface) exitWith {};
             deleteVehicle _x;
         };
     } forEach _array;
+    private _array2 = nearestTerrainObjects [_bomb, ["FENCE", "WALL"], 10];
+    {
+        systemChat format["handling z post init z event ahdnelrem terrain %1, %2",  _x, _bomb];
+            _x setDamage [1, true, _bomb];
+            deleteVehicle _x;
+    } forEach _array2;
     true;
 }] call ace_explosives_fnc_addDetonateHandler;
 
