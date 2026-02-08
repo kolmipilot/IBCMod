@@ -17,6 +17,7 @@ if (!hasInterface) exitWith {};
 
 [{ 
     params ["_unit", "_range", "_bomb", "_fuzeTime", "_triggerItem"];
+    if(typeOf _bomb == QGVAR(Bangalore_Ammo)) then {
     private _array = nearestObjects [_bomb, [], 10];
     {   
         systemChat format["handling z post init z event ahdnelrem %1, %2",  _x, _bomb];
@@ -32,5 +33,8 @@ if (!hasInterface) exitWith {};
             deleteVehicle _x;
     } forEach _array2;
     true;
+    } else {
+    true;
+    }
 }] call ace_explosives_fnc_addDetonateHandler;
 
