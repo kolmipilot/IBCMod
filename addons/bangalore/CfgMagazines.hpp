@@ -5,7 +5,7 @@ class CfgMagazines {
         author = "kolmipilot";
         displayName = "Bangalore Torpedo";
         descriptionShort = "Explosive designed to destroy field fortifications.";
-        mass = 5;
+        mass = 80;
         picture = QPATHTOF(data\bangalore_ico.paa);
         ammo = QGVAR(Bangalore_Ammo);
         ACEGVAR(explosives,SetupObject) = QGVAR(Bangalore_Place);

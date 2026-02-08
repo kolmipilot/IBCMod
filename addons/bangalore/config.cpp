@@ -18,4 +18,3 @@ class CfgPatches {
 #include "CfgMagazines.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgWeapons.hpp"
-
