@@ -11,5 +11,12 @@ class CfgAmmo {
 
         ACEGVAR(explosives,magazine) = QGVAR(Bangalore_Mag);
         ACEGVAR(explosives,Explosive) = QGVAR(Bangalore_Ammo);
+        ACEGVAR(explosives,size) = 1;
+        triggerWhenDestroyed = 1;
+
+        class EventHandlers
+		{
+			fired = QUOTE(call FUNC(detonate));
+		};
     };
 };
