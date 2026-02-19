@@ -10,7 +10,7 @@
 * List <ARRAY>
 *
 * Example:
-* [string, "CfgVehicles"] call bangalore_bangalore_fnc_getlist;
+* [string, "CfgVehicles"] call ibc_gun_breaching_fnc_getList;
 *
 * Public: No
 */
