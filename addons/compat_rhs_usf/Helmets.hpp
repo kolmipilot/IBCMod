@@ -104,3 +104,6 @@ RHS_BASECAP(rhs_booniehat2_marpatd,ItemCore);
 RHS_BASECAP(rhs_8point_marpatd,ItemCore);
 
 RHS_HELMET_LIGHT(rhsusf_ach_helmet_ocp,H_HelmetB);
+RHS_HELMET_LIGHT(rhsusf_opscore_01,rhsusf_ach_helmet_ocp);
+RHS_HELMET_LIGHT(rhsusf_opscore_cover,rhsusf_opscore_01);
+RHS_HELMET_LIGHT(rhsusf_opscore_mar_01,rhsusf_ach_helmet_ocp)
