@@ -67,20 +67,20 @@ class HelmetClass: BaseClass { \
     class ItemInfo: HeadgearItem { \
         class HitpointsProtectionInfo { \
             class HitpointsProtectionInfo \
-			{ \
-				class Head \
-				{ \
-					hitpointName = "HitHead"; \
-					armor = 0; \
-					passThrough=1; \
-				}; \
-				class Face \
-				{ \
-					hitpointName = "HitFace"; \
-					armor = 0; \
-					passThrough = 1; \
-				}; \
-			}; \
+            { \
+                class Head \
+                { \
+                    hitpointName = "HitHead"; \
+                    armor = 0; \
+                    passThrough=1; \
+                }; \
+                class Face \
+                { \
+                    hitpointName = "HitFace"; \
+                    armor = 0; \
+                    passThrough = 1; \
+                }; \
+            }; \
         }; \
     }; \
 }
@@ -101,27 +101,27 @@ class H_HelmetB: ItemCore {
 RHS_BASECAP(rhsusf_patrolcap_ocp,H_HelmetB);
 class rhs_xmas_antlers : ItemCore
 {
-	class ItemInfo: HeadgearItem
-	{
-		ace_hearing_protection = 1;
-		ace_hearing_lowerVolume = 0.0;
-		mass = 25;
-		class HitpointsProtectionInfo
-		{
-			class Head
-			{
-				hitpointName="HitHead";
-				Armor=8;
-				passThrough = 0.5;
-			};
-			class Face
-			 {
-				hitpointName="HitFace";
-				armor=8;
-				passThrough=0.5;
-			};
-		};
-	};
+    class ItemInfo: HeadgearItem
+    {
+        ace_hearing_protection = 1;
+        ace_hearing_lowerVolume = 0.0;
+        mass = 25;
+        class HitpointsProtectionInfo
+        {
+            class Head
+            {
+                hitpointName="HitHead";
+                Armor=8;
+                passThrough = 0.5;
+            };
+            class Face
+             {
+                hitpointName="HitFace";
+                armor=8;
+                passThrough=0.5;
+            };
+        };
+    };
 };
 RHS_BASECAP(rhs_Booniehat_ocp,ItemCore);
 RHS_BASECAP(rhs_booniehat2_marpatd,ItemCore);
@@ -140,26 +140,26 @@ RHS_HELMET_MEDIUM(rhsusf_mich_helmet_marpatwd,H_HelmetB);
 
 class rhsusf_mich_helmet_marpatwd_norotos_arc : rhsusf_mich_helmet_marpatwd
 {
-	class ItemInfo : ItemInfo{};
+    class ItemInfo : ItemInfo{};
 };
 class rhsusf_mich_bare : rhsusf_mich_helmet_marpatwd
 {
-	class ItemInfo : ItemInfo{};
+    class ItemInfo : ItemInfo{};
 };
 class rhsusf_mich_bare_headset : rhsusf_mich_bare
 {
-	class ItemInfo : ItemInfo{};
+    class ItemInfo : ItemInfo{};
 };
 
 RHS_HELMET_MEDIUM(rhsusf_mich_bare_alt,rhsusf_mich_bare);
 
 class rhsusf_mich_bare_norotos : rhsusf_mich_bare
 {
-	class ItemInfo : ItemInfo{};
+    class ItemInfo : ItemInfo{};
 };
 class rhsusf_mich_bare_norotos_headset : rhsusf_mich_bare_headset
 {
-	class ItemInfo : ItemInfo{};
+    class ItemInfo : ItemInfo{};
 };
 
 RHS_HELMET_MEDIUM(rhsusf_mich_bare_norotos_alt,rhsusf_mich_bare_norotos);
@@ -167,11 +167,11 @@ RHS_HELMET_MEDIUM(rhsusf_mich_bare_norotos_alt_headset,rhsusf_mich_bare_norotos_
 
 class rhsusf_mich_bare_norotos_arc : rhsusf_mich_bare
 {
-	class ItemInfo : ItemInfo{};
+    class ItemInfo : ItemInfo{};
 };
 class rhsusf_mich_bare_norotos_arc_headset : rhsusf_mich_bare_headset
 {
-	class ItemInfo : ItemInfo{};
+    class ItemInfo : ItemInfo{};
 };
 
 RHS_HELMET_MEDIUM(rhsusf_mich_bare_norotos_arc_alt,rhsusf_mich_bare_norotos_arc);
@@ -183,7 +183,7 @@ RHS_HELMET_MEDIUM(rhsusf_mich_bare_semi_headset,rhsusf_mich_bare_headset);
 
 class rhsusf_mich_bare_norotos_semi : rhsusf_mich_bare_semi
 {
-	class ItemInfo : ItemInfo{};
+    class ItemInfo : ItemInfo{};
 };
 
 RHS_HELMET_MEDIUM(rhsusf_mich_bare_norotos_semi_headset,rhsusf_mich_bare_semi_headset);

@@ -5,11 +5,11 @@ class CfgPatches {
         name = COMPONENT_NAME;
 
         author = "MiszczuZPolski";
-        authors[] = {"MiszczuZPolski"};
+        authors[] = {"MiszczuZPolski", "kolmipilot"};
 
         VERSION_CONFIG;
 
-        requiredAddons[] = {"rhsusf_main_loadorder"};
+        requiredAddons[] = {"rhsusf_main_loadorder", "ibc_main"};
         skipWhenMissingDependencies = 1;
 
         units[] = {};
