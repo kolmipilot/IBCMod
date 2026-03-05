@@ -56,7 +56,6 @@ class VestClass: BaseClass { \
     }; \
 }
 
-// Macro for light vests (armor 6)
 #define RHS_VEST_LIGHT(VestClass,BaseClass) \
 class VestClass: BaseClass { \
     class ItemInfo: ItemInfo { \
@@ -72,8 +71,8 @@ class VestClass: BaseClass { \
             class Chest \
             { \
                 hitpointName = "HitChest"; \
-                armor = 6; \
-                passThrough = 0.4; \
+                armor = 8; \
+                passThrough = 0.5; \
                 simulation = ""; \
             }; \
             class Arms \
@@ -86,28 +85,86 @@ class VestClass: BaseClass { \
             class Diaphragm \
             { \
                 hitpointName = "HitDiaphragm"; \
-                armor = 6; \
-                passThrough = 0.4; \
+                armor = 8; \
+                passThrough = 0.5; \
                 simulation = ""; \
             }; \
             class Abdomen \
             { \
                 hitpointName = "HitAbdomen"; \
-                armor = 6; \
-                passThrough = 0.4; \
+                armor = 8; \
+                passThrough = 0.5; \
                 simulation = ""; \
             }; \
             class Pelvis \
             { \
                 hitpointName = "HitPelvis"; \
-                armor = 6; \
-                passThrough = 0.4; \
+                armor = 0; \
+                passThrough = 1; \
                 simulation = ""; \
             }; \
             class Body \
             { \
                 hitpointName = "HitBody"; \
-                passThrough = 0.4; \
+                passThrough = 0.5; \
+                simulation = ""; \
+            }; \
+        }; \
+    }; \
+}
+
+// Macro for Load bearing Equipment (armor 0)
+#define RHS_VEST_LBE(VestClass,BaseClass) \
+class VestClass: BaseClass { \
+    class ItemInfo: ItemInfo { \
+        class HitpointsProtectionInfo \
+        { \
+            class Neck \
+            { \
+                hitpointName = "HitNeck"; \
+                armor = 0; \
+                passThrough = 1; \
+                simulation = ""; \
+            }; \
+            class Chest \
+            { \
+                hitpointName = "HitChest"; \
+                armor = 0; \
+                passThrough = 1; \
+                simulation = ""; \
+            }; \
+            class Arms \
+            { \
+                hitpointName = "HitArms"; \
+                armor = 0; \
+                passThrough = 1; \
+                simulation = ""; \
+            }; \
+            class Diaphragm \
+            { \
+                hitpointName = "HitDiaphragm"; \
+                armor = 0; \
+                passThrough = 1; \
+                simulation = ""; \
+            }; \
+            class Abdomen \
+            { \
+                hitpointName = "HitAbdomen"; \
+                armor = 0; \
+                passThrough = 1; \
+                simulation = ""; \
+            }; \
+            class Pelvis \
+            { \
+                hitpointName = "HitPelvis"; \
+                armor = 0; \
+                passThrough = 1; \
+                simulation = ""; \
+            }; \
+            class Body \
+            { \
+                hitpointName = "HitBody"; \
+                passThrough = 1; \
                 simulation = ""; \
             }; \
         }; \
@@ -133,7 +190,7 @@ RHS_VEST_MEDIUM(rhs_6b23_6sh92_headset,rhs_6b23_6sh92);
 RHS_VEST_MEDIUM(rhs_6b23_6sh92_headset_mapcase,rhs_6b23_6sh92);
 RHS_VEST_MEDIUM(rhs_6b23_6sh92_radio,rhs_6b23_6sh92);
 RHS_VEST_MEDIUM(rhs_6sh46,Vest_Camo_Base);
-RHS_VEST_MEDIUM(rhs_vest_commander,Vest_Camo_Base);
+RHS_VEST_LBE(rhs_vest_commander,Vest_Camo_Base);
 class rhs_vest_pistol_holster: rhs_vest_commander
 {
     class ItemInfo: ItemInfo
@@ -143,61 +200,61 @@ class rhs_vest_pistol_holster: rhs_vest_commander
             class Head
             {
                 hitpointName="HitHead";
-                Armor=100;
-                passThrough = 0.1;
+                Armor=0;
+                passThrough = 1;
             };
             class Face
             {
                 hitpointName="HitFace";
-                Armor=100;
-                passThrough = 0.1;
+                Armor=0;
+                passThrough = 1;
             };
             class Neck
             {
                 hitpointName = "HitNeck";
-                Armor=100;
-                passThrough = 0.1;
+                Armor=0;
+                passThrough = 1;
                 simulation = "";    
             };
             class Chest
             {
                 hitpointName = "HitChest";
-                Armor=100;
-                passThrough = 0.1;
+                Armor=0;
+                passThrough = 1;
                 simulation = "";    
             };
             class Arms
             {
                 hitpointName = "HitArms";
-                    Armor=100;
-                passThrough = 0.1;
+                Armor=0;
+                passThrough = 1;
                 simulation = "";    
             };
             class Diaphragm
             {
                 hitpointName = "HitDiaphragm";
-                Armor=100;
-                passThrough = 0.1;
+                Armor=0;
+                passThrough = 1;
                 simulation = "";    
             };
             class Abdomen
             {
                 hitpointName = "HitAbdomen";
-                Armor=100;
-                passThrough = 0.1;
+                Armor=0;
+                passThrough = 1;
                 simulation = "";    
             };
             class Pelvis
             {
                 hitpointName = "HitPelvis";
-                Armor=100;
-                passThrough = 0.1;
+                Armor=0;
+                passThrough = 1;
                 simulation = "";        
             };
             class Body
             {
                 hitpointName = "HitBody";
-                passThrough = 0.1;
+                passThrough = 1;
                 simulation = "";    
             };
         };
@@ -233,7 +290,7 @@ RHS_VEST_MEDIUM(rhs_6b23_ML_6sh92,rhs_6b23_6sh92);
 RHS_VEST_MEDIUM(rhs_6b23_ML_6sh92_vog,rhs_6b23_6sh92_vog);
 
 // Additional vests with medium armor
-RHS_VEST_LIGHT(rhs_vydra_3m,Vest_Camo_Base);
+RHS_VEST_LBE(rhs_vydra_3m,Vest_Camo_Base);
 RHS_VEST_MEDIUM(rhs_6b23_vydra_3m,rhs_6b23_6sh92);
 RHS_VEST_MEDIUM(rhs_6b23_digi_vydra_3m,rhs_6b23_vydra_3m);
 RHS_VEST_MEDIUM(rhs_6b23_ML_vydra_3m,rhs_6b23_vydra_3m);
@@ -322,26 +379,26 @@ RHS_VEST_LIGHT(rhs_6b5_officer_spetsodezhda,rhs_6b5_officer);
 RHS_VEST_LIGHT(rhs_6b5_medic_spetsodezhda,rhs_6b5_medic);
 RHS_VEST_LIGHT(rhs_6b5_sniper_spetsodezhda,rhs_6b5_sniper);
 RHS_VEST_LIGHT(rhs_6b5_rifleman_spetsodezhda,rhs_6b5_rifleman);
-RHS_VEST_LIGHT(rhs_chicom,Vest_Camo_Base);
-RHS_VEST_LIGHT(rhs_chicom_khk,rhs_chicom);
-RHS_VEST_LIGHT(rhs_gear_OFF,rhs_chicom);
-RHS_VEST_LIGHT(rhs_lifchik,rhs_chicom);
-RHS_VEST_LIGHT(rhs_lifchik_light,rhs_lifchik);
-RHS_VEST_LIGHT(rhs_lifchik_NCO,rhs_lifchik);
-RHS_VEST_LIGHT(rhs_lifchik_vog,rhs_lifchik);
-RHS_VEST_LIGHT(rhs_belt_sks,rhs_chicom);
-RHS_VEST_LIGHT(rhs_belt_svd,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_belt_AK,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_belt_AK_back,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_belt_AK_GL,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_belt_AK4,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_belt_AK4_back,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_belt_holster,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_belt_RPK,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_suspender_SKS,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_suspender_AK,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_suspender_AK4,rhs_belt_sks);
-RHS_VEST_LIGHT(rhs_suspender_AK8_chestrig,rhs_belt_sks);
+RHS_VEST_LBE(rhs_chicom,Vest_Camo_Base);
+RHS_VEST_LBE(rhs_chicom_khk,rhs_chicom);
+RHS_VEST_LBE(rhs_gear_OFF,rhs_chicom);
+RHS_VEST_LBE(rhs_lifchik,rhs_chicom);
+RHS_VEST_LBE(rhs_lifchik_light,rhs_lifchik);
+RHS_VEST_LBE(rhs_lifchik_NCO,rhs_lifchik);
+RHS_VEST_LBE(rhs_lifchik_vog,rhs_lifchik);
+RHS_VEST_LBE(rhs_belt_sks,rhs_chicom);
+RHS_VEST_LBE(rhs_belt_svd,rhs_belt_sks);
+RHS_VEST_LBE(rhs_belt_AK,rhs_belt_sks);
+RHS_VEST_LBE(rhs_belt_AK_back,rhs_belt_sks);
+RHS_VEST_LBE(rhs_belt_AK_GL,rhs_belt_sks);
+RHS_VEST_LBE(rhs_belt_AK4,rhs_belt_sks);
+RHS_VEST_LBE(rhs_belt_AK4_back,rhs_belt_sks);
+RHS_VEST_LBE(rhs_belt_holster,rhs_belt_sks);
+RHS_VEST_LBE(rhs_belt_RPK,rhs_belt_sks);
+RHS_VEST_LBE(rhs_suspender_SKS,rhs_belt_sks);
+RHS_VEST_LBE(rhs_suspender_AK,rhs_belt_sks);
+RHS_VEST_LBE(rhs_suspender_AK4,rhs_belt_sks);
+RHS_VEST_LBE(rhs_suspender_AK8_chestrig,rhs_belt_sks);
 RHS_VEST_MEDIUM(rhs_6b45,rhs_6b43);
 RHS_VEST_MEDIUM(rhs_6sh117_rifleman,Vest_Camo_Base);
 RHS_VEST_MEDIUM(rhs_6sh117_nco,rhs_6sh117_rifleman);
