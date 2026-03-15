@@ -34,3 +34,8 @@ workshop = [
     "1795825073", # USP AIO Workshop ID
     "2056229605", # USP Gear - ACE Workshop ID
 ]
+[melb]
+extends = "default"
+workshop = [
+    "561177050", #MELB mission enhanced little bird
+]
